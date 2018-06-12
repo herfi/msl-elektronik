@@ -3,23 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        {% block stylesheets %}{% endblock %}
+
+
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+            <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+            <link rel="stylesheet" href="css/dropdown_style.css">
+            <link rel="stylesheet" href="css/mbr-additional.css">
+            <link rel="stylesheet" href="css/mobirise-icons.css">
+            <link rel="stylesheet" href="css/tether.min.css">
+            <link rel="stylesheet" href="css/theme_style.css">
+        {% endblock %}
+
     </head>
     <body>
-    	{{ include('includs/nav.html.twig') }}
+    	{{ include('includes/nav.html.twig') }}
 
-    	<div class="container">
-    		{% block body %}{% endblock %}
-    	</div>
+    	
+    	{% block body %}{% endblock %}
+    	
         
 
-        {{ include('includs/footer.html.twig') }}
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        {{ include('includes/footer.html.twig') }}
+        
 
 
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/tether.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/smooth-scroll.js"></script>
+            <script src="js/jarallax.min.js"></script>
+            <script src="js/script.min.js"></script>
+            <script src="js/jquery.touch-swipe.min.js"></script>
+            <script src="js/script.js"></script>
+
+        {% endblock %}
+
+
     </body>
 </html>
